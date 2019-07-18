@@ -21,8 +21,7 @@ button, a.button, header nav a {
 }
 
 .section-top {
-  // background: @dark-blue;
-  background: linear-gradient(to right, @dark-blue, @soft-blue);
+  background: linear-gradient(to right, @top-section-left, @top-section-right);
   color: white;
 
   a {
@@ -34,6 +33,7 @@ button, a.button, header nav a {
     background: @green;
     padding: 9px 31px;
     margin-left: 30px;
+    border-radius: 3px;
   }
 
   header {
@@ -55,10 +55,9 @@ button, a.button, header nav a {
     align-items: center;
 
     &__text {
-      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      margin-top: -40px;
 
       button {
         background: @green;
@@ -66,7 +65,7 @@ button, a.button, header nav a {
         width: 320px;
         height: 72px;
         border-radius: 5px;
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 24px;
         font-weight: 700;
         border: none;
@@ -75,11 +74,8 @@ button, a.button, header nav a {
 
     h1 {
       font-size: 40px;
-      // margin-top: 24px;
-      line-height: 1.6;
+      line-height: 1.4;
       vertical-align: top;
-      // letter-spacing: 0.8px;
-      // margin-bottom: 100px;
     }
   }
 
@@ -88,4 +84,13 @@ button, a.button, header nav a {
   }
 }
 
+
+.section-middle {
+  padding: 0 80px;
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    color: @very-dark-blue;
+  }
+}
 

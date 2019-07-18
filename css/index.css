@@ -146,7 +146,7 @@ header nav a {
   width: 1440px;
 }
 .section-top {
-  background: linear-gradient(to right, hsl(243, 58%, 33%), hsl(243, 86%, 85%));
+  background: linear-gradient(to right, #150F71, #6F6ABA);
   color: white;
 }
 .section-top a {
@@ -157,6 +157,7 @@ header nav a {
   background: hsl(163, 95%, 43%);
   padding: 9px 31px;
   margin-left: 30px;
+  border-radius: 3px;
 }
 .section-top header {
   display: flex;
@@ -176,10 +177,9 @@ header nav a {
   align-items: center;
 }
 .section-top__hero__text {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-top: -40px;
 }
 .section-top__hero__text button {
   background: hsl(163, 95%, 43%);
@@ -187,16 +187,24 @@ header nav a {
   width: 320px;
   height: 72px;
   border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 24px;
   font-weight: 700;
   border: none;
 }
 .section-top__hero h1 {
   font-size: 40px;
-  line-height: 1.6;
+  line-height: 1.4;
   vertical-align: top;
 }
 .section-top .logo {
   width: 158px;
+}
+.section-middle {
+  padding: 0 80px;
+}
+.section-middle h2 {
+  text-align: center;
+  font-size: 32px;
+  color: hsl(243, 87%, 12%);
 }
