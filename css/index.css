@@ -1,3 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  background: hsl(243, 86%, 85%);
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+button,
+a.button,
+header nav a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+.container {
+  width: 1440px;
+}
+.section-top {
+  background: linear-gradient(to right, hsl(243, 58%, 33%), hsl(243, 86%, 85%));
+  color: white;
+}
+.section-top a {
+  color: white;
+  text-decoration: none;
+}
+.section-top a.button {
+  background: hsl(163, 95%, 43%);
+  padding: 9px 31px;
+  margin-left: 30px;
+}
+.section-top header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 100px;
+}
+.section-top__hero {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: calc(80px + 50px);
+  height: 100%;
+  align-items: center;
+}
+.section-top__hero__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-top__hero__text button {
+  background: hsl(163, 95%, 43%);
+  color: white;
+  width: 320px;
+  height: 72px;
+  border-radius: 5px;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+}
+.section-top__hero h1 {
+  font-size: 40px;
+  line-height: 1.6;
+  vertical-align: top;
+}
+.section-top .logo {
+  width: 158px;
 }
