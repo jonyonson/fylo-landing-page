@@ -1,0 +1,49 @@
+footer {
+  display: flex;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid white;
+  padding-right: 55px;
+
+  &__logo {
+    width: 197px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid white;
+  padding: 0 55px;
+  flex-grow: 1;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.footer__nav__fylo, .footer__nav__company, .footer__nav__support {
+  display: flex;
+  flex-direction: column;
+  // width: 545px;
+
+  span {
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  a {
+    margin-bottom: 15px;
+  }
+
+}
+
+
+.footer__form {
+  padding-left: 55px;
+  width: 415px;
+}
