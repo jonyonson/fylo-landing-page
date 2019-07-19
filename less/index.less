@@ -26,10 +26,9 @@ button, a.button, header nav a {
   width: 1440px;
   max-width: 100%;
   margin: 0 auto;
-
 }
 
-.section-top {
+.top-content {
   background: linear-gradient(to right, @top-section-left, @top-section-right);
   color: white;
   position: relative;
@@ -112,8 +111,7 @@ button, a.button, header nav a {
   }
 }
 
-.section-middle {
-
+.main-content {
   padding: 0 5.5%;
   margin-top: 270px;
 
@@ -121,11 +119,48 @@ button, a.button, header nav a {
     text-align: center;
     font-size: 33px;
     color: @very-dark-blue;
+    margin-bottom: 130px;
   }
 
   img {
     height: 342px;
+    margin-right: 150px;
   }
+
+  &__features {
+    display: flex;
+
+    .testing-wrap {
+      width: 100%;
+    }
+    .testing {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 45px;
+
+      // display: block;
+    }
+
+    &__text {
+      width: 300px;
+
+      h3 {
+        color: @very-dark-blue;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: @gray;
+        line-height: 1.4;
+      }
+
+
+
+    }
+  }
+
   button {
     background: @green;
     color: white;
@@ -134,9 +169,4 @@ button, a.button, header nav a {
   }
 }
 
-footer {
-  padding: 100px 5.5%;
-  background: @very-dark-blue;
-  color: white;
-}
 
