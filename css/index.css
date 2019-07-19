@@ -198,6 +198,21 @@ header nav a {
 .section-top {
   background: linear-gradient(to right, #150F71, #6F6ABA);
   color: white;
+  position: relative;
+  width: 100%;
+}
+.section-top:after {
+  position: absolute;
+  width: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: top left;
+  transform: skewY(6deg);
 }
 .section-top a {
   color: white;
@@ -253,6 +268,7 @@ header nav a {
 }
 .section-middle {
   padding: 0 5.5%;
+  margin-top: 270px;
 }
 .section-middle h2 {
   text-align: center;
