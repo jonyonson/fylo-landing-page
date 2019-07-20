@@ -1,8 +1,8 @@
-@import "variables";
-@import "reset";
+@import 'variables';
+@import 'reset';
 
 // Components
-@import "footer";
+@import 'footer';
 
 * {
   box-sizing: border-box;
@@ -12,12 +12,17 @@ body {
   font-family: @body-font-family;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: @heading-font-family;
   font-weight: 700;
 }
 
-button, a.button, header nav a {
+button,
+a.button,
+header nav a {
   font-family: @heading-font-family;
   font-weight: 400;
 }
@@ -115,11 +120,11 @@ button, a.button, header nav a {
   padding: 0 5.5%;
   margin-top: 270px;
 
-  h2 {
+  &__title,
+  &__access__title {
     text-align: center;
     font-size: 33px;
     color: @very-dark-blue;
-    margin-bottom: 130px;
   }
 
   img {
@@ -129,16 +134,21 @@ button, a.button, header nav a {
 
   &__features {
     display: flex;
+    align-items: center;
+    margin-top: 130px;
+    margin-bottom: 166px;
 
     .testing-wrap {
       width: 100%;
     }
+
     .testing {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 45px;
 
-      // display: block;
+      &:nth-child(1) {
+        margin-bottom: 43px;
+      }
     }
 
     &__text {
@@ -153,20 +163,27 @@ button, a.button, header nav a {
 
       p {
         color: @gray;
-        line-height: 1.4;
+        line-height: 1.5;
       }
-
-
-
     }
   }
 
-  button {
-    background: @green;
-    color: white;
-    border-radius: 3px;
-    font-size: 16px;
+  &__access {
+    width: 700px;
+    margin: 0 auto;
+
+    &__text {
+      margin-top: 35px;
+      color: @dark-blue;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    button {
+      background: @green;
+      color: white;
+      border-radius: 3px;
+      font-size: 16px;
+    }
   }
 }
-
-
