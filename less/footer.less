@@ -1,7 +1,28 @@
 footer {
   padding: 100px 5.5%;
+  padding: 140px 5.5%;
+  margin-top: 240px;
+
   background: @very-dark-blue;
   color: white;
+
+  position: relative;
+  width: 100%;
+
+  &:after {
+    position: absolute;
+    width: 100%;
+    // height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform-origin: top right;
+    transform: skewY(6deg);
+  }
 }
 
 .footer__inner {
@@ -14,9 +35,21 @@ footer {
   align-items: flex-start;
   border-right: 1px solid white;
   padding-right: 55px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  // margin-top:10px;
 
   &__logo {
     width: 197px;
+    margin-bottom: 44px;
+  }
+
+  &__phone {
+    margin-bottom: 20px;
+  }
+
+  &__phone img, &__email img {
+    margin-right: 15px;
   }
 }
 
@@ -26,6 +59,8 @@ footer {
   border-right: 1px solid white;
   padding: 0 55px;
   flex-grow: 1;
+  padding-top: 15px;
+
   a {
     text-decoration: none;
     color: white;
@@ -41,6 +76,7 @@ footer {
 
   span {
     font-weight: bold;
+    font-size: 20px;
     margin-bottom: 25px;
   }
 
@@ -50,6 +86,32 @@ footer {
 }
 
 .footer__form {
-  padding-left: 55px;
-  width: 415px;
+  padding-left: 90px;
+  max-width: 415px;
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  input {
+    height: 45px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background: @green;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 200px;
+    height: 45px;
+    // margin-left: 30px;
+    border: none;
+    float: right;
+
+  }
 }
